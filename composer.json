@@ -1,0 +1,10 @@
+{
+  "name": "websk/php-config",
+  "description": "PHP configs wrapper",
+  "homepage": "https://websk.ru/",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
