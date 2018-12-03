@@ -1,6 +1,6 @@
 <?php
 
-namespace WebSK\Slim;
+namespace WebSK\Config;
 
 /**
  * Class ConfWrapper
