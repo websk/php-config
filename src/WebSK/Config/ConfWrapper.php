@@ -13,7 +13,7 @@ class ConfWrapper
     /**
      * @param $config
      */
-    public function setConfig($config)
+    public static function setConfig($config)
     {
         self::$config = $config;
     }
