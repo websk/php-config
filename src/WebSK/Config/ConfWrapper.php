@@ -4,7 +4,7 @@ namespace WebSK\Config;
 
 /**
  * Class ConfWrapper
- * @package WebSK\Skif
+ * @package WebSK\Config
  */
 class ConfWrapper
 {
