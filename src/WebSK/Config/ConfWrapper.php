@@ -8,12 +8,13 @@ namespace WebSK\Config;
  */
 class ConfWrapper
 {
-    protected static $config = [];
+    protected static array $config = [];
 
     /**
-     * @param $config
+     * @param array $config
+     * @return void
      */
-    public static function setConfig($config)
+    public static function setConfig(array $config): void
     {
         self::$config = $config;
     }
@@ -25,7 +26,7 @@ class ConfWrapper
      * @param mixed $default Value to use if the path was not found
      * @return mixed
      */
-    public static function value($path, $default = '')
+    public static function value(string $path, mixed $default = ''): mixed
     {
         if (empty($path)) {
             return '';
@@ -39,7 +40,6 @@ class ConfWrapper
             if (array_key_exists($part, $value)) {
                 $value = $value[$part];
             } else {
-                // key doesn't exist, fail
                 return $default;
             }
         }

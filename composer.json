@@ -2,6 +2,9 @@
   "name": "websk/php-config",
   "description": "PHP configs wrapper",
   "homepage": "https://websk.ru/",
+  "require": {
+    "php": "^8.3"
+  },
   "autoload": {
     "psr-4": {
       "": "src/"
