@@ -37,11 +37,11 @@ class ConfWrapper
         $parts = explode(".", $path);
 
         foreach ($parts as $part) {
-            if (array_key_exists($part, $value)) {
-                $value = $value[$part];
-            } else {
+            if (!is_array($value) || !array_key_exists($part, $value)) {
                 return $default;
             }
+
+            $value = $value[$part];
         }
 
         return $value;

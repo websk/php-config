@@ -2,12 +2,19 @@
   "name": "websk/php-config",
   "description": "PHP configs wrapper",
   "homepage": "https://websk.ru/",
+  "license": "MIT",
   "require": {
     "php": "^8.3"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^12.5"
+  },
   "autoload": {
     "psr-4": {
-      "": "src/"
+      "WebSK\\": "src/WebSK/"
     }
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
